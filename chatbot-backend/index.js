@@ -60,7 +60,8 @@ app.listen(port, () => {
 });
 
 // server.js
-const mongoose = require('mongoose');
+var mongoose = require('mongodb');
+var MongoClient=mongoose.MongoClient;
 
 MongoClient.connect('mongodb://localhost:27017/mydatabase', {
     useNewUrlParser: true,
