@@ -7,7 +7,7 @@ const User = require('./models/User');
 const port = process.env.PORT || 3001; // Use the port specified by environment variable or default to 3001
 app.use(cors(
     {
-        origin: "*",
+        origin: *,
         methods: ["POST","GET"],
         credentials: true
     }
