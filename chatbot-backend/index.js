@@ -60,10 +60,9 @@ app.listen(port, () => {
 });
 
 // server.js
-var mongoose = require('mongodb');
-var MongoClient=mongoose.MongoClient;
+const mongoose = require('mongoose');
 
-MongoClient.connect('mongodb://localhost:27017/mydatabase', {
+mongoose.connect('mongodb://localhost:27017/mydatabase', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
