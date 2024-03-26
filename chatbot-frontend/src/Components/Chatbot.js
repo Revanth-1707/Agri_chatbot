@@ -109,7 +109,7 @@ const Chatbot = () => {
     if (inputText.trim() === '') return;
   
     try {
-      const response = await axios.post('http://localhost:3001/api/chatbot', { message: inputText });
+      const response = await axios.post('https://agri-chatbot-cyan.vercel.app/api/chatbot', { message: inputText });
       const botResponse = response.data.message;
   
       // Update the messages state using the functional form of setMessages
