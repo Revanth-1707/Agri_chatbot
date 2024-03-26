@@ -78,7 +78,7 @@ const Login = ({ setIsAuthenticated, isAuthenticated}) => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/api/login', { email, password });
+      const response = await axios.post('https://agri-chatbot-cyan.vercel.app/api/login', { email, password });
       console.log(response.data);
       setIsAuthenticated(true);
       localStorage.setItem('isAuthenticated', 'true');
