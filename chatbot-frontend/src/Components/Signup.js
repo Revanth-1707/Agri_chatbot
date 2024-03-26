@@ -68,7 +68,7 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post('https://agri-chatbot-cyan.vercel.app/api/signup', { email, password });
+      const response = await axios.post('https://agri-chatbot-cyan.vercel.app/signup', { email, password });
       console.log(response.data);
       navigate('/');
       toast.success('Successfully created account. Now you can login using your credentials.');
