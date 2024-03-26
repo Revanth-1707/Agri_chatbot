@@ -12,6 +12,8 @@ app.use(cors(
         credentials: true
     }
 ));
+app.options('*', cors()); // Enable preflight requests for all routes
+
 app.use(express.json());
 
 // Define routes
