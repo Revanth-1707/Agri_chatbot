@@ -64,7 +64,7 @@ app.listen(port, () => {
 // server.js
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://revanthagastya12345:bT4Sg$V45*#UQC8@cluster.ymnnu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster', {
+mongoose.connect('mongodb+srv://revanthagastya12345:e3CRBHmYxl9xc8qo@cluster.ymnnu.mongodb.net', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
