@@ -71,7 +71,7 @@ app.listen(port, () => {
 // server.js
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/mydatabase', {
+mongoose.connect('mongodb+srv://revanthagastya12345:bT4Sg$V45*#UQC8@cluster.ymnnu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
