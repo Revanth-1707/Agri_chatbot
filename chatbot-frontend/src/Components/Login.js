@@ -85,7 +85,11 @@ const Login = ({ setIsAuthenticated, isAuthenticated}) => {
       navigate('/');
       toast.success('Welcome! You have successfully logged in.'); 
     } catch (error) {
-      console.error('Error logging in:', error);
+      if (error.response && error.response.status === 404) {
+        toast.error('User with this email does not exist.');
+      } else {
+        console.error('Error logging in:', error);
+      }
     }
   };
 
